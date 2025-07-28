@@ -1,0 +1,343 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body{
+    font-family: "roboto", sans-serif;
+    color: #434455;
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul,p{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+}
+.container{
+    display: block;
+    width: 1158px;
+    padding: 120px 0;
+    
+}
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    border-bottom: 1px solid #e7e9fc;
+}
+.logo{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16667;
+    color: #2e2f42;
+    text-decoration: none;  
+}
+.nav-links, .contacts-links, .about-us-list, .team-list, .portfolio-list, .social-icons-list{
+    list-style-type: none;
+}
+.nav-links{
+    display: inline-flex;
+    gap: 40px;
+}
+.nav-links .link  {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2e2f42;
+    text-decoration: none;
+}
+.contacts-links{
+    display: flex;
+    gap: 40px;
+}
+.contacts-links .link{
+    font-size: 16px;
+    line-height: 1.5;
+    color: inherit;
+    text-decoration: none;
+}
+.nav-links .link:hover, .contacts-links .link:hover
+{
+    color: #404bbf;
+}
+.page-title-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/titleBackground/people-office.jpg);
+    background-size: cover;
+}
+.page-title{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07143;
+    width: 496px;
+    height: 120px;
+    color: #fff;
+}
+.button-order{
+    width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    padding: 16px 32px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #4d5ae5;
+    cursor: pointer;
+}
+.button-order:hover {
+    background-color: #404bbf;
+}
+.about-us-list{
+    justify-content: space-evenly;
+    padding: 3%;
+    gap: 15px;
+    align-content: flex-start;
+}
+.about-us-list title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #2e2f42;
+}
+.about-us-list .text{
+    font-size: 16px;
+    line-height:1.5;
+}
+.about-us-list .about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+}
+.team-div{
+    display: flex;
+    align-content: space-evenly;
+    gap: 50px;
+    flex-direction: column;
+    background: #f4f4fd;
+}
+.team-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.team-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    color: #2e2f42;
+    text-align: center;
+}
+.employee{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 0 0 4px 4px;
+    padding: 0px 0px 32px 0px;
+    width: 264px;
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.employee .title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #2e2f42;
+}
+.employee .text{
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+.employee img{
+    width: 264px;
+    height: 260px;
+}
+.portfolio-div{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.portfolio-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.portfolio-list img{
+    width: 360px;
+    height: 296px;
+}
+.portfolio-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    color: #2e2f42;
+}
+.portfolio-list .title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #2e2f42;
+}
+.portfolio-list .text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 16px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.portfolio-list .portfolio{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    background: #fff;
+}
+.portfolio:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    background-color: #2e2f42;
+}
+.footer-title{  
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+}
+.footer-media{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.footer-div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    width: 264px;
+    gap: 20px;
+}
+.footer .logo{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16667;
+    color: #f4f4fd;
+}
+.footer .text{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #f4f4fd;
+}
+.about-us-list .icon-div{
+    display: inherit;
+    position: relative;
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+}
+.social-icons-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 24px;
+}
+.icona{
+    position: absolute;
+    top: 50%;   
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+}
+.icon-blue {
+    width: 41px;
+    height: 41px;
+}
+.icon-blue:hover path{
+    width: 41px;
+    height: 41px;
+    fill: #31d0aa;
+}
+.icon-blue-div{
+    position: relative;
+    width: 41px;
+    height: 41px;
+}
+.social-icons-list .icon-s{
+    position: absolute;
+    top: 50%;   
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.icon-footer{
+    width: 24px;
+    height: 24px;
+}
+*:hover{
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-img{
+    position: relative;
+    overflow: hidden;
+}
+.hover-text-div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    width: 360px;
+    height: 396px;
+    background-color: #4d5ae5;
+    padding: 10%;
+    transform: translateY(100%);
+}
+.hover-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #f4f4fd;
+}
+.portfolio:hover .hover-text-div,
+.portfolio-img:hover .hover-text-div {
+    transform: translateY(0);
+}
