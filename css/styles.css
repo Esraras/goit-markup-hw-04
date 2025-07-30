@@ -305,10 +305,13 @@ ul,p{
 }
 .social-icons-list .icon-s{
     position: relative;
-    background-color: #404bbf;
+    background-color: #4d5ae5;
     width: 100%;
     height: 100%;
     border-radius: 20px;
+}
+.social-icons-list .icon-s:hover{
+    background-color: #31d0aa;
 }
 .icon-footer{
     position: absolute;
